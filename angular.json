@@ -28,7 +28,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "localize": true,
+            "localize": ["en-US"],
             "aot": true,
             "assets": [
               "src/favicon.ico",
@@ -67,6 +67,9 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "de": {
+              "localize": ["de"]
             }
           }
         },
@@ -78,6 +81,9 @@
           "configurations": {
             "production": {
               "browserTarget": "workshop-angular-localize:build:production"
+            },
+            "de": {
+              "browserTarget": "workshop-angular-localize:build:de"
             }
           }
         },
